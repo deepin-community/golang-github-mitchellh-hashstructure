@@ -1,5 +1,59 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-mitchellh-hashstructure (1.1.0-1) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor (Jelmer Vernooĳ) ]
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Apply multi-arch hints.
+    + golang-github-mitchellh-hashstructure-dev: Add Multi-Arch: foreign.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Anthony Fok ]
+  * New upstream version 1.1.0
+  * debian/gbp.conf: Set debian-branch to debian/sid for DEP-14 conformance
+  * Update debian/watch to track v1 only, and remove uupdate
+  * Update Maintainer email address to team+pkg-go@tracker.debian.org
+  * Change Section from devel to golang
+  * Bump debhelper dependency to "Build-Depends: debhelper-compat (= 13)"
+  * Add "Rules-Requires-Root: no" to debian/control
+  * Bump Standards-Version to 4.6.0 (no change)
+  * Revert "ignore test failures" in debian/rules from 2016.
+    See https://github.com/mitchellh/hashstructure/issues/5
+
+ -- Anthony Fok <foka@debian.org>  Fri, 29 Oct 2021 00:50:51 -0600
+
+golang-github-mitchellh-hashstructure (1.0.0-1) unstable; urgency=medium
+
+  * New upstream version 1.0.0
+  * Update debian/watch to track release tarballs
+  * Bump Standards-Version to 4.2.1 (no change)
+
+ -- Anthony Fok <foka@debian.org>  Wed, 19 Dec 2018 20:26:04 -0700
+
+golang-github-mitchellh-hashstructure (0.0~git20170608.2bca23e-1) unstable; urgency=medium
+
+  [ Paul Tagliamonte ]
+  * Use a secure transport for the Vcs-Git and Vcs-Browser URL
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Anthony Fok ]
+  * New upstream version 0.0~git20170608.2bca23e
+  * Apply "cme fix dpkg" fixes to debian/control and debian/copyright,
+    adding "Testsuite: autopkgtest-pkg-go" field,
+    setting Priority to optional, bumping Standards-Version to 4.2.0,
+    and using secure https URL in debian/copyright, etc.
+  * Build-Depends on golang-any instead of golang-go
+    and remove unnecessary Depends on golang-go from -dev package
+  * Use debhelper (>= 11)
+  * Add myself to the list of Uploaders
+  * Add debian/watch, checking Git HEAD
+
+ -- Anthony Fok <foka@debian.org>  Sat, 18 Aug 2018 07:13:45 -0600
+
+golang-github-mitchellh-hashstructure (0.0~git20160209.0.6b17d66-1) unstable; urgency=medium
+
+  * Initial release (Closes: #818546).
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Fri, 18 Mar 2016 08:03:42 +1100
