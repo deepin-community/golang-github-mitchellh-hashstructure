@@ -1,3 +1,19 @@
+golang-github-mitchellh-hashstructure (2.0.2-2) unstable; urgency=medium
+
+  * Team upload
+  * Upload changes from experimental to unstable
+  * Update Standards-Version to 4.7.0 in d/control (no changes needed)
+
+ -- Mathias Gibbens <gibmat@debian.org>  Fri, 26 Jul 2024 08:19:58 +0000
+
+golang-github-mitchellh-hashstructure (2.0.2-1) experimental; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Bump standards version
+
+ -- Reinhard Tartler <siretart@tauware.de>  Mon, 20 May 2024 06:50:30 -0400
+
 golang-github-mitchellh-hashstructure (1.1.0-1) unstable; urgency=medium
 
   [ Debian Janitor (Jelmer Vernooĳ) ]
